@@ -5,7 +5,7 @@ temp = 0
 while initialnumberList != finalNumberList:
     count = 0
     finalNumberList = initialnumberList
-    print(initialnumberList)
+    #print(initialnumberList)
     while count < (len(initialnumberList)-1):
         if initialnumberList[count] <= initialnumberList[count+1]:
             count = count + 1
@@ -14,7 +14,8 @@ while initialnumberList != finalNumberList:
             initialnumberList[count] = initialnumberList[count+1]
             initialnumberList[count+1] = temp
             count = count + 1
-    print(initialnumberList)
+        print(initialnumberList)
+        
 
     
 

@@ -30,12 +30,15 @@ class List(object):
           print ("List: ",",".join(values))
 
       def deleteDuplicate(self):
-            current = sef.head
-            while current is not None:
-                  second = current.next
-                  while second:
-                        if second.data == current.data
-                              current.next = second.next.next 
+            x = self.head
+            while x is not None:
+                  while n.next is not None:
+                        if n.next.data == x.data:
+                              n.next = n.next.next
+                        else:
+                              n = n.next
+                  x = n = x.next
+                              
             
          
 if __name__ == '__main__':
@@ -44,3 +47,4 @@ if __name__ == '__main__':
       l.insert(l.head,Node(6))
       l.insert(l.head,Node(8))
       l.display()
+      
