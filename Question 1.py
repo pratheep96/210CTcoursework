@@ -1,9 +1,14 @@
-firstString=input("Enter the first word: ")
-secondString=input("Enter the second word: ")
-firstWord=list(firstString)
+#This asks for the user to input
+firstString=input("Enter the first word: ") 
+secondString=input("Enter the second word: ") 
+#This converts the user input into list
+firstWord=list(firstString)                 
 secondWord=list(secondString)
-finalWord=[]
+#This sets up a blank array
+finalWord=[]                                 
 count = 0
+
+#Each loop places each letter one after the other depending on which string is longer
 if len(firstString)<len(secondString):
     while count < len(secondString):
         if count == len(firstString):
@@ -29,6 +34,7 @@ else:
         finalWord.append(firstWord[count])
         finalWord.append(secondWord[count])
         count = count + 1
-        
+
+#This joins the letters together        
 finalString=''.join(finalWord)
 print(finalString)
